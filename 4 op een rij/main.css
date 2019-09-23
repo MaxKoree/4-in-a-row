@@ -1,0 +1,160 @@
+body {
+    padding-left: 20px;
+    font-family: 'Hind', sans-serif;
+}
+
+#redDisc, #blackDisc {
+    margin-right: 40px;
+}
+
+table {
+    display: table;
+    border-collapse: collapse;
+    border-spacing: 2px;
+    margin-top: 10px;
+    margin-left: 0px;
+    border-radius: 50px;
+}
+
+#gameBoard {
+    flex: 1;
+    padding-top: 30px;
+}
+
+.container {
+    display: flex;
+}
+
+th, td {
+    border: 1px solid black;
+    width: 107px;
+}
+
+td {
+    height: 112px;
+    width: 100px;
+    text-align: center;
+
+}
+
+
+#th0, #td1, #td2, #td3, #td4, #td5, #td6 {
+    border-left: 1px solid white;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+
+th {
+    font-size: 30px;
+    height: 109px;
+    width: 100px;
+}
+
+th:hover {
+    font-size: 50px;
+}
+
+
+#players {
+    flex: 0 0 35%;
+    width: 50px;
+}
+
+input[type=text] {
+    width: 500px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+#p1 {
+    padding-top: 100px;
+    font-size: 25px;
+}
+
+#playerOneInput {
+    margin-top: 70px;
+}
+
+#startGameButton, #resetNamesButton {
+    background-color: #167bff;
+    margin-top: 50px;
+    margin-left: 100px;
+    color: white;
+    border: 2px solid black;
+    border-width: 2px;
+    padding: 20px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    border-radius: 10px;
+}
+
+#resetGameButton {
+    background-color: #167bff;
+    margin-top: 50px;
+    margin-left: 150px;
+    color: white;
+    border: 2px solid black;
+    border-width: 2px;
+    padding: 50px;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    border-radius: 20px;
+}
+
+#startGameButton:hover, #resetNamesButton:hover, #resetGameButton:hover {
+    background-color: white;
+    color: black;
+}
+
+#startGameButton:disabled {
+    color: black;
+    background-color: #ebebe4;
+    border-color: black;
+}
+
+img {
+    width: 40px;
+}
+
+
+#p1:disabled {
+    font-size: 40px;
+}
+
+@keyframes img {
+    0%   {left:0px; top:-800px;}
+    50% {left:0px; top:-14px;}
+    60% {left:0px; top:-0px;}
+    70% {left:0px; top:-10px;}
+    75% {left:0px; top:0px;}
+    80% {left:0px; top:-7px;}
+    90% {left:0px; top:0px;}
+    95% {left:0px; top:-3px;}
+    100% {left:0px; top:0px;}
+}
+
+img {
+    position: relative;
+    animation-name: img;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    border-radius: 50%;
+}
+
+.circleBlack {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    color: black;
+}
+
+.circleRed {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    color: black;
+}
